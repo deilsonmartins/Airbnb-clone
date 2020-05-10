@@ -1,3 +1,9 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -68,7 +74,7 @@ button:hover {
 
 .card {
     cursor: pointer;
-    background:#DCDCDC;
+    background:#FAFAFA;
     list-style-type: none;
     display: flex;
     width: 400px;
@@ -114,9 +120,9 @@ button:hover {
 li:hover
 {
     box-shadow:
-            1px 1px black,
-            2px 2px black,
-            3px 3px black;
+            1px 1px #E6E6E6,
+            2px 2px #E6E6E6,
+            3px 3px #E6E6E6;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
 }

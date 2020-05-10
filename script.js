@@ -46,33 +46,32 @@ function createCard(src, Onetype, OneName, OnePrice, Onelocation) {
 function loadCards(pagination = 24) {
     const URL = "https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72?offset=5&limit=5";
     const locations = 
-    ['Rio de Janeiro - BR',
-     'Lisboa - POR',
-     'Rome - ITA',
-     'Paris - FRAN',
-     'Fortaleza - BR',
-     'Berlin - ALEM',
-     'Toronto - CAN',
-     'Michigan - EUA',
-     'Barcelona - ES',
-     'Madrid - ES',
-     'Brasilia - BR',
-     'Buenos Aires - ARG',
-     'Santiago - CH',
-     'Montevidéu - UR',
-     'New York - EUA',
-     'Porto - POR',
-     'Moskou - RUS',
-     'Napoli - ITA',
-     'São Paulo - BR',
-     'Florianópolis - BR',
-     'Oslo - NOR',
-     'Monaco - FRAN',
-     'Camberra - AUS',
-     'Porto Alegre - BR',
-     'Angra dos Reis - BR'
+    ['Rio de Janeiro',
+     'Lisboa',
+     'Rome',
+     'Paris',
+     'Fortaleza',
+     'Berlin',
+     'Toronto',
+     'Michigan',
+     'Barcelona',
+     'Madrid',
+     'Brasilia',
+     'Buenos Aires',
+     'Santiago',
+     'Montevidéu',
+     'New York',
+     'Porto',
+     'Moskou',
+     'Napoli',
+     'São Paulo',
+     'Florianópolis',
+     'Oslo',
+     'Monaco',
+     'Camberra',
+     'Porto Alegre',
+     'Angra dos Reis'
 ] 
-    
     var location = 0
     axios.get(URL).then(
         function (response)
@@ -85,6 +84,35 @@ function loadCards(pagination = 24) {
         })
 }
 
+/*function searchList(value)
+{
+    var lis = document.getElementsByClassName('card');
+    
+    for (var li in lis)
+    {
+       console.log(lis[li].lastElementChild.innerHTML)
+        
+    }
+}
+
+function OneSearch()
+{
+   let ul = document.getElementById('wrapper-cards');
+
+   ul.innerHTML = '';
+   const photo = "https://a0.muscache.com/im/pictures/e6c4b347-49c7-4840-8c00-df36a2a273da.jpg?aki_policy=x_large"
+   createCard(photo, 'property_type', 'name', 'formatedPrice(card.price)', 'Location')
+}
+
+var form = document.getElementById('search');
+var campo = document.getElementById('campo');
+
+form.addEventListener('submit', function(e) {
+    // alerta o valor do campo
+    searchList(campo.value)
+    OneSearch()
+    // impede o envio do form
+    e.preventDefault();
+});*/
+
 loadCards() 
-
-
